@@ -31,6 +31,18 @@ export class OpenAIProvider implements ILLMProvider {
     if (base.endsWith('/v1')) {
       return `${base}/chat/completions`
     }
+
+    if (base.endsWith('/v3/chat/completions')) {
+      return base
+    }
+    // 如果 baseUrl 已经带了完整 /v3/chat 路径，直接用
+    if (base.endsWith('/v3/chat')) {
+      return `${base}/completions`
+    }
+    if (base.endsWith('/v3')) {
+      return `${base}/chat/completions`
+    }
+
     // 否则补全完整路径
     return `${base}/v1/chat/completions`
   }
