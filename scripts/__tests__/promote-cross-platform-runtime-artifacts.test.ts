@@ -16,7 +16,7 @@ import {
 import { COMMAND_PROFILES, finalizeReleaseEvidence, initializeReleaseEvidence, recordReleaseCommand } from '../release-evidence-v2.mjs'
 import { macosAcceptanceReceipt, windowsAcceptanceReceipt } from './release-evidence-v2-fixtures'
 
-const repository = 'EthanYoQ/AI-Novel-Writer'
+const repository = 'sundyhy/AI-Novel-Writer'
 const expectedSha = 'a'.repeat(40)
 const futureExpiry = new Date(Date.now() + 60_000).toISOString()
 const QUALIFICATION_BUNDLE_TEST_TIMEOUT_MS = 15_000

@@ -440,11 +440,7 @@ export function releaseNotes(version) {
   return [
     `## 中文`,
     ``,
-    `AI 小说作家 ${version} 是一次覆盖模型参数、旧项目角色数据与长输出恢复的重大更新。`,
-    ``,
-    `- #78 模型温度与 Kimi 兼容：用户配置温度成为连接测试、普通生成、流式生成和工作流的唯一权威来源；仅在服务商官方端点明确要求固定温度时才由参数策略安全处理，避免第三方代理被误判。`,
-    `- #84 角色侧边栏崩溃：打开项目时统一规范化旧角色记录中缺失或未知的角色定位，并为外部坏数据保留防御显示，避免旧角色数据导致侧边栏渲染失败。`,
-    `- #85 长输出恢复：模型因长度限制截断时采用有上限、有上下文预算的有界续写；无法获得完整结果时立即失败，不完整草稿及后处理结果不落盘。`,
+    `AI 小说作家 ${version} 是一个重要里程碑版本，延续本地优先的长篇小说生产工作台定位：编排层负责项目状态、蓝图、连续性、阶段门禁与落盘，生成层由调用方 Agent 完成，不内置任何本地或云端模型依赖。`,
     ``,
     `本版本在同一个 Release 中继续遵守五项资产合同：Windows x64 安装程序、其 blockmap、latest.yml、macOS Apple Silicon（ARM64）DMG 及其 SHA-256 校验文件。`,
     ``,
@@ -455,11 +451,7 @@ export function releaseNotes(version) {
     ``,
     `## English`,
     ``,
-    `AI Novel Writer ${version} is a major update spanning model parameters, legacy character data, and recovery from length-limited output.`,
-    ``,
-    `- #78 model temperature and Kimi compatibility: the user-configured temperature is authoritative across connection tests, standard and streaming generation, and workflows. The request policy handles a fixed temperature only when an official provider endpoint explicitly requires it, without misclassifying third-party proxies.`,
-    `- #84 character sidebar crash: legacy character records with missing or unknown roles are normalized when a project opens, with defensive rendering retained for malformed external data so legacy character data can no longer crash the sidebar.`,
-    `- #85 long-output recovery: output stopped by a model length limit uses bounded continuation with a finite continuation count and context budget. If a complete result cannot be obtained, the operation fails immediately and incomplete drafts or post-processing results are not persisted.`,
+    `AI Novel Writer ${version} is a major milestone release. It keeps the local-first long-form fiction production workspace positioning: the orchestration layer owns project state, blueprints, continuity, stage gates and persistence, while generation is delegated to the caller agent with no built-in local or cloud model dependency.`,
     ``,
     `This Release continues the five assets contract: the Windows x64 installer, its blockmap, latest.yml, the macOS Apple Silicon (ARM64) DMG, and its SHA-256 checksum.`,
     ``,
@@ -469,6 +461,7 @@ export function releaseNotes(version) {
     `- This macOS release has no in-app updater; future versions require a manual update from the Release page. The Windows in-app updater consumes only Windows \`latest.yml\` and installer assets.`,
   ].join('\n')
 }
+
 
 async function createVerifiedTag(fetcher, api, headers, ready) {
   await requestJson(fetcher, `${api}/repos/${ready.repository}/git/refs`, {

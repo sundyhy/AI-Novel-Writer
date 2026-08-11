@@ -154,7 +154,7 @@ describe('macOS DMG acceptance receipt contract', () => {
       'init',
       '--platform', 'macos',
       '--evidence-root', evidenceRoot,
-      '--repository', 'EthanYoQ/AI-Novel-Writer',
+      '--repository', 'sundyhy/AI-Novel-Writer',
       '--commit', 'd'.repeat(40),
       '--run-id', '404',
       '--run-attempt', '1',

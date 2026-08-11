@@ -15,13 +15,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/releases"><img src="https://badgen.net/github/tag/EthanYoQ/AI-Novel-Writer?label=release" alt="Release" /></a>
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/blob/master/LICENSE"><img src="https://badgen.net/badge/license/GPL-3.0/blue" alt="GPL-3.0 License" /></a>
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/stargazers"><img src="https://badgen.net/github/stars/EthanYoQ/AI-Novel-Writer" alt="GitHub stars" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/releases"><img src="https://badgen.net/github/tag/sundyhy/AI-Novel-Writer?label=release" alt="Release" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/blob/master/LICENSE"><img src="https://badgen.net/badge/license/GPL-3.0/blue" alt="GPL-3.0 License" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/stargazers"><img src="https://badgen.net/github/stars/sundyhy/AI-Novel-Writer" alt="GitHub stars" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest">Download the latest Windows and macOS ARM64 installers</a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/releases/latest">Download the latest Windows and macOS ARM64 installers</a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 
 > ## v0.8.1 major stability update
 >
-> [v0.8.1](https://github.com/EthanYoQ/AI-Novel-Writer/releases/tag/v0.8.1) is a major update spanning model parameters, legacy character data, and recovery from length-limited output.
+> [v0.8.1](https://github.com/sundyhy/AI-Novel-Writer/releases/tag/v0.8.1) is a major update spanning model parameters, legacy character data, and recovery from length-limited output.
 >
 > - **#78 model temperature and Kimi compatibility** — The user-configured temperature is now authoritative across connection tests, standard and streaming generation, and workflows. The request policy handles a fixed temperature only when an official provider endpoint explicitly requires it, without misclassifying third-party proxies.
 > - **#84 character sidebar crash** — Legacy character records with missing or unknown roles are normalized when a project opens, with defensive rendering retained for malformed external data so legacy character data can no longer crash the sidebar.
@@ -122,7 +122,7 @@ Formal releases use a Windows NSIS installer:
 ai-novel-writer-setup-<version>.exe
 ```
 
-1. Download formal installers only from [GitHub Releases](https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest).
+1. Download formal installers only from [GitHub Releases](https://github.com/sundyhy/AI-Novel-Writer/releases/latest).
 2. The installer updates the application and should not delete novel projects, character cards, or existing settings. Back up important work before any upgrade.
 3. After installation, use **Check for updates** on the welcome page. When a formal update is found, the app downloads it and offers **Restart and update / Later**.
 4. Older portable ZIP builds cannot obtain their first updater automatically. Install a formal installer manually once; new portable ZIP releases are no longer maintained.
@@ -131,7 +131,7 @@ The installer is not code-signed at present. Windows may show publisher or reput
 
 ### macOS Apple Silicon (ARM64)
 
-Download this file from [GitHub Releases](https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest):
+Download this file from [GitHub Releases](https://github.com/sundyhy/AI-Novel-Writer/releases/latest):
 
 ```text
 ai-novel-writer-mac-arm64-<version>-installer.dmg

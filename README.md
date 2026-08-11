@@ -15,13 +15,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/releases"><img src="https://badgen.net/github/tag/EthanYoQ/AI-Novel-Writer?label=release" alt="Release" /></a>
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/blob/master/LICENSE"><img src="https://badgen.net/badge/license/GPL-3.0/blue" alt="GPL-3.0 License" /></a>
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/stargazers"><img src="https://badgen.net/github/stars/EthanYoQ/AI-Novel-Writer" alt="GitHub stars" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/releases"><img src="https://badgen.net/github/tag/sundyhy/AI-Novel-Writer?label=release" alt="Release" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/blob/master/LICENSE"><img src="https://badgen.net/badge/license/GPL-3.0/blue" alt="GPL-3.0 License" /></a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/stargazers"><img src="https://badgen.net/github/stars/sundyhy/AI-Novel-Writer" alt="GitHub stars" /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest">下载最新 Windows 与 macOS ARM64 安装包</a>
+  <a href="https://github.com/sundyhy/AI-Novel-Writer/releases/latest">下载最新 Windows 与 macOS ARM64 安装包</a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 
 > ## v0.8.1 稳定性重大更新
 >
-> [v0.8.1](https://github.com/EthanYoQ/AI-Novel-Writer/releases/tag/v0.8.1) 是一次覆盖模型参数、旧项目角色数据与长输出恢复的重大更新。
+> [v0.8.1](https://github.com/sundyhy/AI-Novel-Writer/releases/tag/v0.8.1) 是一次覆盖模型参数、旧项目角色数据与长输出恢复的重大更新。
 >
 > - **#78 模型温度与 Kimi 兼容**：用户配置温度成为连接测试、普通生成、流式生成和工作流的唯一权威来源；仅在服务商官方端点明确要求固定温度时才由参数策略安全处理，避免第三方代理被误判。
 > - **#84 角色侧边栏崩溃**：打开项目时统一规范化旧角色记录中缺失或未知的角色定位，并为外部坏数据保留防御显示，避免旧角色数据导致侧边栏渲染失败。
@@ -122,7 +122,7 @@ Model:     你的 Ollama 模型名，例如 qwen3:14b
 ai-novel-writer-setup-<版本号>.exe
 ```
 
-1. 只从 [GitHub Releases](https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest) 下载正式安装包。
+1. 只从 [GitHub Releases](https://github.com/sundyhy/AI-Novel-Writer/releases/latest) 下载正式安装包。
 2. 安装程序更新应用本身，不应删除小说项目、角色卡或已有设置；仍建议在升级前自行备份重要作品。
 3. 安装后可在欢迎页使用“检查更新”。发现正式更新后，应用先下载，再提供“立即重启更新 / 稍后”的选择。
 4. 旧版便携 ZIP 不能自行获得首个更新器版本，需要手动安装一次正式安装包；后续不再维护新的便携 ZIP。
@@ -131,7 +131,7 @@ ai-novel-writer-setup-<版本号>.exe
 
 ### macOS Apple Silicon（ARM64）
 
-从 [GitHub Releases](https://github.com/EthanYoQ/AI-Novel-Writer/releases/latest) 下载：
+从 [GitHub Releases](https://github.com/sundyhy/AI-Novel-Writer/releases/latest) 下载：
 
 ```text
 ai-novel-writer-mac-arm64-<版本号>-installer.dmg
