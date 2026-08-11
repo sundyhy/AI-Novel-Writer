@@ -28,15 +28,11 @@
   <img src="docs/assets/readme/hero-en-v2.png" alt="AI Novel Writer — a local-first desktop workspace for long-form fiction" width="100%" />
 </p>
 
-> ## v0.8.1 major stability update
+> ## v2.0.0 major milestone release
 >
-> [v0.8.1](https://github.com/sundyhy/AI-Novel-Writer/releases/tag/v0.8.1) is a major update spanning model parameters, legacy character data, and recovery from length-limited output.
+> [v2.0.0](https://github.com/sundyhy/AI-Novel-Writer/releases/tag/v2.0.0) is a major milestone release. It keeps the local-first long-form fiction production workspace positioning: the orchestration layer owns project state, blueprints, continuity, stage gates and persistence, while generation is delegated to the caller agent with no built-in local or cloud model dependency.
 >
-> - **#78 model temperature and Kimi compatibility** — The user-configured temperature is now authoritative across connection tests, standard and streaming generation, and workflows. The request policy handles a fixed temperature only when an official provider endpoint explicitly requires it, without misclassifying third-party proxies.
-> - **#84 character sidebar crash** — Legacy character records with missing or unknown roles are normalized when a project opens, with defensive rendering retained for malformed external data so legacy character data can no longer crash the sidebar.
-> - **#85 long-output recovery** — Output stopped by a model length limit now uses bounded continuation with a finite continuation count and context budget. If a complete result cannot be obtained, the operation fails immediately and incomplete drafts or post-processing results are not persisted.
->
-> One Release keeps the exact five assets contract: the Windows x64 assets `ai-novel-writer-setup-0.8.1.exe`, `ai-novel-writer-setup-0.8.1.exe.blockmap`, and `latest.yml`, plus `ai-novel-writer-mac-arm64-0.8.1-installer.dmg` and `ai-novel-writer-mac-arm64-0.8.1-installer.dmg.sha256`. The Windows installer is not code-signed but supports the in-app update. The macOS ARM64 package is unsigned and not notarized, and it still requires a manual update from the Release page. Windows security prompts or Gatekeeper may require manual confirmation on first launch.
+> One Release keeps the exact five assets contract: the Windows x64 assets `ai-novel-writer-setup-2.0.0.exe`, `ai-novel-writer-setup-2.0.0.exe.blockmap`, and `latest.yml`, plus `ai-novel-writer-mac-arm64-2.0.0-installer.dmg` and `ai-novel-writer-mac-arm64-2.0.0-installer.dmg.sha256`. The Windows installer is not code-signed but supports the in-app update. The macOS ARM64 package is unsigned and not notarized, and it still requires a manual update from the Release page. Windows security prompts or Gatekeeper may require manual confirmation on first launch.
 
 ## What this product is
 
